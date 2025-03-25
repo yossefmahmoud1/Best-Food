@@ -3,9 +3,9 @@ const Herocard = () => {
       <div className="max-w-[90%] lg:max-w-[80%] mx-auto p-4 py-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         
         {[
-          { title: "And we serve pasta", img: "pexels-fotios-photos-1279330.jpg" },
-          { title: "Steak meat", img: "pexels-vanmalidate-769289.jpg" },
-          { title: "We also serve desserts", img: "pexels-ash-craig-122861-376464.jpg" },
+          { title: "And we serve pasta", img: "https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=600" },
+          { title: "Steak meat", img: "https://images.pexels.com/photos/769289/pexels-photo-769289.jpeg?auto=compress&cs=tinysrgb&w=600" },
+          { title: "We also serve desserts", img: "https://images.pexels.com/photos/3992134/pexels-photo-3992134.jpeg?auto=compress&cs=tinysrgb&w=600" },
         ].map((item, index) => (
           <div key={index} className="rounded-xl relative overflow-hidden group aspect-[4/5] min-h-[350px]">
             <div className="absolute w-full h-full bg-black/50 text-white rounded-xl flex flex-col justify-between p-4">
@@ -19,7 +19,7 @@ const Herocard = () => {
             </div>
   
             <img 
-              src={`../../public/Iamges/${item.img}`} 
+              src={item.img} 
               className="w-full h-full  object-center rounded-xl transition-transform duration-300 group-hover:scale-105" 
             />
           </div>
